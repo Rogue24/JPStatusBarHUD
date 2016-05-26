@@ -17,12 +17,22 @@
 
 @interface JPStatusBarHUD : NSObject
 
+/** 显示自定义文本 */
 +(void)showMessage:(NSString *)text;
+
+/** 显示自定义图文 */
 +(void)showMessage:(NSString *)text image:(UIImage *)image;
+
+/** 显示成功信息 */
 +(void)showSuccess:(NSString *)text;
+
+/** 显示错误信息 */
 +(void)showError:(NSString *)text;
+
+/** 显示加载信息 */
 +(void)showLoading:(NSString *)text;
 
+/** 隐藏HUD */
 +(void)hide;
 
 @end
